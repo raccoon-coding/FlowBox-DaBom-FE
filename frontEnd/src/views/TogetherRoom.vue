@@ -63,7 +63,7 @@ const loadTogetherInfo = (data) => {
   }
 }
 const connectWebSocket = async () => {
-  const ws = new SockJS('http://localhost:8080/chat', null,
+  const ws = new SockJS('https://www.dabomvideo.kro.kr/chat', null,
       {
         transportOptions: {
           xhr: { withCredentials: true },

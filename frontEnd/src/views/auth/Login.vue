@@ -13,9 +13,9 @@ const showErrorModal = ref(false)
 const errorMessage = ref('')
 const errorTitle = 'Together 생성 에러'
 const socialLogin = reactive({
-  "google": "http://localhost:8080/oauth2/authorization/google",
-  "kakao": "http://localhost:8080/oauth2/authorization/kakao",
-  "naver": "http://localhost:8080/oauth2/authorization/naver"
+  "google": "https://www.dabomvideo.kro.kr/oauth2/authorization/google",
+  "kakao": "https://www.dabomvideo.kro.kr/oauth2/authorization/kakao",
+  "naver": "https://www.dabomvideo.kro.kr/oauth2/authorization/naver"
 })
 
 const closeErrorModal = () => {

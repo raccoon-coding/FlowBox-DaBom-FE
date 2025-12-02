@@ -33,7 +33,7 @@ export const useSocketStore = defineStore('socket', () => {
     const jwt = await getJWT();
 
     const chatStore = useChatStore();
-    const socket = new SockJS('http://localhost:8080/chat');
+    const socket = new SockJS('https://www.dabomvideo.kro.kr/chat');
     stompClient.value = Stomp.over(socket);
 
     // Set the JWT as a cookie for the backend's JwtHandShakeInterceptor
